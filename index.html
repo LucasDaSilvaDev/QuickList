@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick-List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="logo">
+    <img src="assets/logo.svg" alt="logo">
+  </div>
+
+  <section class="container Home">
+
+    <a href="#">
+      <img class="voltar" src="assets/link button.svg" alt="voltar">
+    </a>
+    
+
+    <h1>Compras da semana</h1>
+
+    <div class="input">
+
+      <input 
+      id="inputItem" 
+      type="text" 
+      placeholder="Adicione um novo item"
+      >
+
+      <button onclick="addItem()">
+        Adicionar item
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <section class="container Itens">
+
+   <div id="lista">
+
+<div id="modelo-item" class="item" style="display:none;">
+
+<div class="item-left">
+
+<input type="checkbox" class="checkbox">
+
+<span class="item-text">test Item</span>
+
+</div>
+
+<a href="#" class="delete">
+<img src="assets/Lixeira.svg" alt="excluir item">
+</a>
+
+</div>
+
+</div>
+
+
+    
+    <div id="alerta" class="alerta">
+
+      <img class="alert" src="assets/Icon!.svg" alt="" class="alert-icon">
+
+      <span>O item foi removido da lista</span>
+
+      <a class="X" href="#" onclick="fecharAlerta()">
+        <img  src="assets/delete-small.svg" alt="fechar alerta">
+      </a>
+
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+

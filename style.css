@@ -1,0 +1,176 @@
+*{ margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Inter", sans-serif; }
+
+
+body, html{
+  overflow-x: hidden;
+  background-color: #F4F5FB;
+}
+body{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:40px;
+  color:#1f1f1f;
+}
+
+.container{
+  max-width: 1280px;
+  
+}
+
+.logo{
+  padding-top: 25px;
+  padding-bottom: 62px;
+}
+
+.voltar{
+  padding-bottom: 16px;
+  padding-right: 369px;
+}
+
+h1{
+  padding-bottom: 44px;
+  color: #080B12;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+.input input{
+ flex: 1;
+ padding:12px;
+ border-radius:12px;
+ border:2px solid #D1D5DB;
+ font-size:14px;
+ background:#FFFFFF; 
+}
+
+.input button{
+  background:#CA3884;
+  color:#FFFFFF;
+  border:none;
+  padding:12px 18px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#lista{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.item{
+display:flex;
+align-items:center;
+background:#efefef;
+padding:1px 16px;
+border-radius:12px;
+width:520px;
+}
+
+.item-left{
+display:flex;
+align-items:center;
+gap:6px;
+}
+
+.checkbox{
+margin-right:8px;
+}
+
+.item-text{
+font-size:14px;
+}
+
+.delete{
+margin-left:auto;
+cursor:pointer;
+opacity:0.7;
+}
+
+.delete:hover{
+opacity:1;
+}
+
+  #alerta{
+    display: none;
+  }
+
+  .alerta{ 
+    margin-top: 36px;
+    background:#C93847; 
+    color:#FFFFFF; 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    padding:6px 16px; 
+    border-radius:12px; 
+    font-size:14px; 
+    width: 520px;
+  } 
+  .alerta img{ 
+    cursor:pointer; 
+  } 
+ 
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .logo {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .voltar {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .input input {
+    width: 100%;
+  }
+
+  .input button {
+    width: 100%;
+  }
+
+  .item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .alerta {
+    width: 100%;
+  }
+}
