@@ -79,7 +79,8 @@ align-items:center;
 background:#efefef;
 padding:1px 16px;
 border-radius:12px;
-width:520px;
+width:100%;
+max-width: 520px;
 }
 
 .item-left{
@@ -94,6 +95,9 @@ margin-right:8px;
 
 .item-text{
 font-size:14px;
+max-width: 400px;
+ word-break: break-all;
+ overflow-wrap: break-word;
 }
 
 .delete{
